@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" >
+
+
+    <!-- Light Theme -->
+    <style name="Theme.GameStoreApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+        <item name="colorAccent">@color/accent_color</item>
+        <item name="android:colorBackground">#FFFFFF</item> <!-- Белый фон -->
+        <item name="buttonStyle">@style/CustomButtonStyle</item>
+        <item name="toolbarStyle">@style/CustomToolbarStyle</item>
+    </style>
+
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/rounded_button</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">8dp</item> <!-- Уменьшили отступы -->
+        <item name="android:minHeight">40dp</item> <!-- Минимальная высота -->
+        <item name="android:textSize">14sp</item> <!-- Меньший шрифт -->
+    </style>
+
+
+
+    <style name="CustomBottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/primary_color</item>
+        <item name="itemTextColor">@color/primary_color</item>
+        <item name="backgroundTint">@color/primary_dark_color</item>
+    </style>
+
+    <style name="CustomToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.ActionBar</item>
+    </style>
+
+
+
+    <style name="CustomToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">#336699</item> <!-- Цвет фона -->
+        <item name="android:elevation">4dp</item> <!-- Тень под Toolbar -->
+        <item name="titleTextAppearance">@style/CustomToolbarTitle</item> <!-- Стилизация текста -->
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Цвет для тулбара -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/darker_blue</item>
+        <item name="colorAccent">@color/darker_blue</item>
+        <item name="colorControlActivated">@color/primary_color</item>
+    </style>
+
+    <style name="CustomEditText" parent="Widget.AppCompat.EditText">
+        <item name="colorControlActivated">@color/primary_color</item> <!-- Синий цвет при фокусе -->
+        <item name="android:textCursorDrawable">@drawable/custom_cursor</item> <!-- Кастомный курсор -->
+        <item name="android:textSelectHandle">@drawable/custom_cursor_drawable</item>
+        <item name="android:textSelectHandleLeft">@drawable/custom_cursor_drawable</item>
+        <item name="android:textSelectHandleRight">@drawable/custom_cursor_drawable</item>
+    </style>
+
+</resources>

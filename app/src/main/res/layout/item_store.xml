@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Карточка для отображения информации о магазине -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@android:color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <!-- Основной контейнер для элементов карточки -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Название магазина -->
+        <TextView
+            android:id="@+id/storeNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/arrowIcon"
+            android:text="Название магазина"
+            android:textColor="#333333"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Название метро -->
+        <TextView
+            android:id="@+id/storeMetroTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/storeNameTextView"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:layout_toStartOf="@id/arrowIcon"
+            android:text="М. Пушкинская"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <!-- Адрес магазина -->
+        <TextView
+            android:id="@+id/storeAddressTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/storeMetroTextView"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="4dp"
+            android:layout_toStartOf="@id/arrowIcon"
+            android:text="ул. Пушкина, д. 10"
+            android:textColor="#666666"
+            android:textSize="18sp" />
+
+        <!-- Иконка стрелки для перехода -->
+        <ImageView
+            android:id="@+id/arrowIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_right"
+            app:tint="@color/primary_color" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+
+

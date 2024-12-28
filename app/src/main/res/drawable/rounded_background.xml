@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Белый цвет фона -->
+    <solid android:color="@color/white" />
+
+    <!-- Закругленные углы -->
+    <corners android:radius="12dp" />
+
+    <!-- Добавьте отступы, если нужно -->
+    <padding
+        android:left="2dp"
+        android:top="2dp"
+        android:right="2dp"
+        android:bottom="2dp" />
+</shape>

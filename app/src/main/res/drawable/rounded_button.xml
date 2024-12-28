@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#336699" /> <!-- Цвет кнопки -->
+    <corners android:radius="12dp" /> <!-- Радиус закругления -->
+    <padding
+        android:left="8dp"
+        android:top="6dp"
+        android:right="8dp"
+        android:bottom="6dp" />
+    <stroke android:width="2dp" android:color="#FFFFFF" />
+</shape>

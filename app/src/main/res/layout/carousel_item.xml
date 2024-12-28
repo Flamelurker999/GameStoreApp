@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Элемент для отображения одного изображения в карусели -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Изображение в карусели -->
+    <ImageView
+        android:id="@+id/carouselImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/image_description"
+        android:scaleType="centerCrop" />
+</FrameLayout>

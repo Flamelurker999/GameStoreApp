@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Геймстор</string>
+    <string name="game_price">%s ₽</string>
+    <string name="add_to_cart">В корзину</string>
+    <string name="game_details">Детали игры</string>
+    <string name="game_image_desc">Изображение игры</string>
+    <string name="search_icon_desc">Иконка поиска</string>
+    <string name="clear_text_desc">Иконка крестика</string>
+    <string name="back_button_desc">Стрелка назад</string>
+    <string name="image_description">Описание</string>
+</resources>
