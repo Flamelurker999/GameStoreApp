@@ -14,7 +14,7 @@ import com.example.gamestoreapp.R
 import com.example.gamestoreapp.model.Game
 
 class CartAdapter(
-    private val items: List<Game>, // Список товаров в корзине
+    private var items: List<Game>, // Список товаров в корзине
     private val onRemoveItem: (Game) -> Unit, // Callback для удаления товара
     private val onItemClick: (Game) -> Unit // Callback для обработки клика по товару
 ) : RecyclerView.Adapter<CartAdapter.CartViewHolder>() {
@@ -37,6 +37,11 @@ class CartAdapter(
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_cart_game, parent, false) // Используем макет item_cart_game
         return CartViewHolder(view)
+    }
+
+    // Метод для обновления данных
+    fun updateItems(newItems: List<Game>) {
+        items = newItems
     }
 
     // Привязка данных к ViewHolder

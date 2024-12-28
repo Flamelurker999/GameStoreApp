@@ -140,12 +140,23 @@ class CartActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
-        val activeTabId = intent.getIntExtra("active_tab", R.id.nav_cart)
-        bottomNavigationView.selectedItemId = activeTabId // Устанавливаем выбранную вкладку
+
+        // Обновляем список товаров в адаптере
+        cartAdapter.updateItems(CartManager.getCartItems())
+
+        // Уведомляем адаптер об изменениях данных
+        cartAdapter.notifyDataSetChanged()
+
+        // Обновляем текст общей стоимости
+        updateTotalPrice()
 
         // Обновляем состояние кнопки при возврате на экран
         updateCheckoutButtonState()
+
+
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        val activeTabId = intent.getIntExtra("active_tab", R.id.nav_cart)
+        bottomNavigationView.selectedItemId = activeTabId // Устанавливаем выбранную вкладку
     }
 
     // Переход к экрану деталей товара
